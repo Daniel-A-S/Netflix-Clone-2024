@@ -1,14 +1,25 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import "./Header.css"
 import NetflixLogo from "../../Assets/Netflix name.jpg"
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
+
 const Header = () => {
+    const [show, handleShow] = useState(false);
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                handleShow(true);
+            } else handleShow(false);
+        });
+    }, []);
   return (
     <>
-       <div className='header_outer_container'>
+       {/* <div className='header_outer_container'> */}
+       <div className={`header_outer_container ${show && 'nav_black'}`}>
         <div className='header_container'>
             <div className="header_left">
                 <ul>
