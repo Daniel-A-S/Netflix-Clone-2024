@@ -1,6 +1,6 @@
-import React, {useState,useEffect} from 'react'
-import "./Header.css"
-import NetflixLogo from "../../Assets/Netflix name.jpg"
+import React, {useState,useEffect} from 'react';
+import "./Header.css";
+import NetflixLogo from "../../Assets/NetflixLogo.png";
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
@@ -24,12 +24,12 @@ const Header = () => {
             <div className="header_left">
                 <ul>
                     <li><img className='netflix-img' src={NetflixLogo} alt="NetflixLogo" width={"100"} /></li>
-                    <li>Home</li>
-                    <li>TVShows</li>
-                    <li>Movies</li>
-                    <li>Latest</li>
-                    <li>MyList</li>
-                    <li>Browse by Languages</li>
+                  <a href="https://www.netflix.com/browse"><li >Home</li></a>  
+                    <a href="https://www.netflix.com/browse/genre/83"><li>TVShows</li></a>
+                    <a href="https://www.netflix.com/browse/genre/34399"><li>Movies</li></a>
+                    <a href="https://www.netflix.com/latest"><li>New & Popular</li></a>
+                   <a href="https://www.netflix.com/latest"> <li>MyList</li> </a> 
+                    <a href="https://www.netflix.com/browse/my-list"><li>Browse by Languages</li></a>
                 </ul>
             </div>
             <div className="header_right">
@@ -40,7 +40,6 @@ const Header = () => {
                     <li><ArrowDropDownIcon/></li>
                 </ul>
             </div>
-
         </div>
     </div>
     </>

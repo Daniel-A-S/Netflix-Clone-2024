@@ -45,7 +45,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
 } 
   return (
     <div className="row">
-      <h2>{title}</h2>
+      <h5>{title}</h5>
       <div className='row_posters'>
         {movies?.map((movie,index)=>(
           <img
