@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Daniel-A-S.github.io/Netflix-Clone-2024/static/css/main.3fc60227.css",
+    "main.js": "/Daniel-A-S.github.io/Netflix-Clone-2024/static/js/main.e6ec06a9.js",
+    "static/media/NetflixLogo.png": "/Daniel-A-S.github.io/Netflix-Clone-2024/static/media/NetflixLogo.f4070143e1f521da82a1.png",
+    "index.html": "/Daniel-A-S.github.io/Netflix-Clone-2024/index.html",
+    "main.3fc60227.css.map": "/Daniel-A-S.github.io/Netflix-Clone-2024/static/css/main.3fc60227.css.map",
+    "main.e6ec06a9.js.map": "/Daniel-A-S.github.io/Netflix-Clone-2024/static/js/main.e6ec06a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fc60227.css",
+    "static/js/main.e6ec06a9.js"
+  ]
+}
